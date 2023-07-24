@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    background:linear-gradient(135deg, #fff, #f46e08 55%, red);
+
+}
+
+.to-do-main {
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 40px auto 40px;
+    padding: 30px 40px 120px;
+    border-radius: 10px;
+
+}
+
+.to-do-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.to-do-header h1 {
+    /* font-family: 'Lilita One', cursive; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    
+}
+
+.to-do-header > img {
+    height: 60px;
+    width: 60px;
+    
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 225, 225);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.row #user-input {
+    background-color: transparent;
+    border: none;
+    padding: 10px 30px 10px;
+    width: 100%;
+}
+
+.row #user-input:focus {
+    outline: none;
+}
+
+.row #submit-btn {
+    border: none;
+    color: white;
+    font-size: 12pt;
+    padding: 15px 50px;
+    border-radius: 20px;
+    background-color: rgb(239, 63, 63);
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#task-list li {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li::before {
+    
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(iconmonstr-circle-lined-240.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+   
+    
+}
+
+li.checked::before {
+    
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(iconmonstr-check-mark-lined-240.png);
+    background-size: 80%;
+    background-position: center;
+    top: 12px;
+    left: 13px;
+    background-color: rgb(239, 63, 63);
+}
+
+span {
+    
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+span:hover {
+    background-color: rgb(229, 225, 225);
+}
+
+
+
+span img {
+    height: 28px;
+    width: 28px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: rgb(98, 91, 91);
+}
