@@ -32,7 +32,6 @@ body {
 }
 
 .to-do-header h1 {
-    /* font-family: 'Lilita One', cursive; */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: -0.5px;
@@ -42,8 +41,6 @@ body {
 .to-do-header > img {
     height: 60px;
     width: 60px;
-    
-    
 }
 
 .row {
@@ -102,7 +99,7 @@ ul li::before {
     width: 28px;
     border-radius: 50%;
     position: absolute;
-    background-image: url(iconmonstr-circle-lined-240.png);
+    background-image: url(/Public/images/iconmonstr-circle-lined-240.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -118,7 +115,7 @@ li.checked::before {
     width: 25px;
     border-radius: 50%;
     position: absolute;
-    background-image: url(iconmonstr-check-mark-lined-240.png);
+    background-image: url(/Public/images/iconmonstr-check-mark-lined-240.png);
     background-size: 80%;
     background-position: center;
     top: 12px;

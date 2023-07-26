@@ -31,7 +31,7 @@ function addItem(){
     li.appendChild(span);
 
     const removeImg = document.createElement("img");
-    removeImg.src = "Public/iconmonstr-x-mark-lined-240.png"
+    removeImg.src = "Public/images/iconmonstr-x-mark-lined-240.png"
     span.append(removeImg);
     
 
