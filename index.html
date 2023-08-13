@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan's To-Do</title>
-    <link rel="stylesheet" href="Public/CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
@@ -16,32 +16,27 @@
         <div class="to-do-main">
             <div class="to-do-header">
                 <!-- <h1>To Do List </h1> -->
-                <img src="Public/images/todolist.png" alt="to do list">
+                <img src="images/todolist.png" alt="to do list">
                 <h1>To Do List </h1>
             </div>
-
-            <div class="row">
-            <input type="text" id="user-input" placeholder="Add text here">
-            <button id="submit-btn" onclick="addItem()">Add</button>
-            </div>
-
+            
+                <form action="/" method="post">
+                    <div class="row">
+                        <input type="text" id="user-input" name="jordan" placeholder="Add text here">
+                        <button type=submit id="submit-btn">Add</button>
+                    </div>
+                </form>
+            
             <div class="list">
                 <ul id="task-list">
-                    <li>Task 1<span><img src="Public/images/iconmonstr-x-mark-lined-240.png" alt=""></span></li>
-                    <li>Task 2<span><img src="Public/images/iconmonstr-x-mark-lined-240.png" alt=""></span></li>
-                    <li>Task 3<span><img src="Public/images/iconmonstr-x-mark-lined-240.png" alt=""></span></li>
+                    <!-- <li>Task 1<span><img src="images/iconmonstr-x-mark-lined-240.png" alt=""></span></li>
+                    <li>Task 2<span><img src="images/iconmonstr-x-mark-lined-240.png" alt=""></span></li>
+                    <li>Task 3<span><img src="images/iconmonstr-x-mark-lined-240.png" alt=""></span></li> -->
                 </ul>
             </div>
         </div>
-
-        
-
-    
-
-        
-
     </div>
     
-    <script src="app.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 </html>

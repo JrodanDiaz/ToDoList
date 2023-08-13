@@ -99,7 +99,7 @@ ul li::before {
     width: 28px;
     border-radius: 50%;
     position: absolute;
-    background-image: url(/Public/images/iconmonstr-circle-lined-240.png);
+    background-image: url(/images/iconmonstr-circle-lined-240.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -115,7 +115,7 @@ li.checked::before {
     width: 25px;
     border-radius: 50%;
     position: absolute;
-    background-image: url(/Public/images/iconmonstr-check-mark-lined-240.png);
+    background-image: url(/images/iconmonstr-check-mark-lined-240.png);
     background-size: 80%;
     background-position: center;
     top: 12px;
